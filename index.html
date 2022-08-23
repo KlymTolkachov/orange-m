@@ -4,37 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize — копия.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular&display swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Orange LogIn</title>
 </head>
 <body>
+    <!-- Фон -->
     <div class="wrapper">
-        <div class="container">
-            <div class="btn"><button type="button" class="btn"><img src="./img/x.svg" alt="X"></button></div>
-            <h1>Member Sign In</h1>
-            <div class="top">
-                <p>Not a member yet?</p>
-                <div><a href="" class="sign-up">Sign up now</a></div>
+        
+        <!-- Блок -->
+        <div class="block">
+            
+            <!-- Кнопка крестик -->
+            <button type="button" class="btn"><img src="./img/x.svg" alt="X"></button>
+
+            <div class="content">
+                
+                <!-- Заголовок -->
+                <h1>Member Sign In</h1>
+                <div class="top">
+                    <p>Not a member yet?</p>
+                    <div><a href="" class="sign-up">Sign up now</a></div>
+                </div>
+                <!-- Форма -->
+                <form action="#" method="">
+                    <div class="email">
+                        <label for="inp-email" class="user-icon"><img src="./img/user-icon.png" alt="User"></label>
+                        <input name="email" type="email" id="inp-email" placeholder="Username / Email">
+                    </div>
+                    <div class="password">
+                        <label for="inp-password" class="lock-icon"><img src="./img/lock-icon.svg" alt="Lock"></label>
+                        <input name="password" type="password" id="inp-password" placeholder="Password">
+                    </div>
+                </form>
+                <!-- Подтверждение -->
+                <div class="bottom">
+                    <button type="submit" class="button">Sign In</button>
+                    <div class="buttom__item">
+                        <input name="checkbox" id="remember-me" type="checkbox">
+                        <label for="remember-me" class="label-remember">Remember me</label>
+                        <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+                    </div>
+                </div>
             </div>
-            <form action="">
-                <div class="email">
-                    <label for="inp-email"><div class="user-icon"><img src="./img/user-icon.png" alt=""></div></label>
-                    <input type="email" id="inp-email" placeholder="Username / Email">
-                </div>
-                <div class="password">
-                    <label for="inp-password"><div class="lock-icon"><img src="./img/lock-icon.svg" alt=""></div></label>
-                    <input type="password" id="inp-password" placeholder="Password">
-                </div>
-            </form>
-            <div class="bottom">
-                <button type="submit" class="button">Sign In</button>
-                <div class="buttom__item">
-                    <input id="remember-me" type="checkbox">
-                    <label for="remember-me">Remember me</label>
-                    <div class="forgot-pass"><a href="">Forgot Password?</a></div>
-                </div>
-            </div>
+        </div>
+        <!-- Копирайт -->
+        <div class="design">
+            <img src="./img/Designed_By_Freepik.svg" alt="copyright">
         </div>
     </div>
 </body>

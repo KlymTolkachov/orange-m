@@ -1,7 +1,13 @@
 
+body {
+    font-family: "Inter", sans-serif;
+}
 
+/* Фон */
 .wrapper {
-    background-image: url("/img/back.svg");
+    position: relative;
+    background-image: url("/img/background.png");
+    background-size: cover;
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -10,22 +16,28 @@
     align-items: center;
 }
 
-.container {
+/* Блок */
+.block {
     background-color: #E1E1E1;
     width: 365px;
     height: 365px;
     position: relative;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    margin: 50px 37px ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
+/* Заголовок */
 h1 {
     font-size: 26px;
     color: #343844;
-    line-height: 31.47px;
-    margin: 47px 0px 7px 0px;
+    line-height: 1.230;
+    margin: 0px 0px 8px 0px;
 }
 
 .top {
@@ -33,30 +45,38 @@ h1 {
     font-size: 10px;
     line-height: 12px;
     display: flex;
+    gap: 4px;
+    margin: 0px 0px 16px 0px;
 }
 
-
-
-.email, .password {
-    display: flex;
-    margin: 17px 0px 0px 0px;
+.top div {
+    border-bottom: 1px solid #fff;
 }
 
+.top a {
+    color: #fff;
+}
+
+/* Кнопка крестик */
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 15px;
     height: 15px;
+
     position: absolute;
     top: 5px;
     right: 5px;
 }
 
-.sign-up {
+/* Форма */
+.email, .password {
+    display: flex;
+    margin: 17px 0px 0px 0px;
 }
-.input-email {
-}
+
 .user-icon, .lock-icon  {
     background-color: #E65848;
     width: 45px;
@@ -70,30 +90,74 @@ h1 {
     height: 28px;
 }
 
-.input-password {
-}
 .lock-icon img {
     height: 29px;
 }
 
 #inp-password, #inp-email {
     background-color: #fff;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 20px;
     height: 45px;
     width: 245px;
     font-size: 15px;
     line-height: 18px;
 }
 
+.password {
+    position: relative;
+}
+
+.password::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('/img/eye.svg');
+    background-repeat: no-repeat;
+    top: 10px;
+    right: 11px;
+}
+
+/* Подтверждение */
 .bottom {
-    margin: 32px 0px 0px 0px;
+    margin: 22px 0px 0px 0px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .button {
     background-color: #E65848;
     width: 138px;
     height: 45px;
+    font-size: 20.5898px;
+    line-height: 1.25;
+    color: #fff;
 }
+
+.label-remember {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #343844;
+    margin: 0px 0px 0px 15px;
+}
+
+.forgot-pass a {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #343844;
+} 
+
 .forgot-pass {
+    margin: 15px 0px 0px 0px;
+    text-align: right;
+}
+
+/* Копирайт */
+
+.design {
+    position: absolute;
+    bottom: 25px;
+    left: 175px;
 }
