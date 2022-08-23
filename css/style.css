@@ -1,0 +1,99 @@
+
+
+.wrapper {
+    background-image: url("/img/back.svg");
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #E1E1E1;
+    width: 365px;
+    height: 365px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 26px;
+    color: #343844;
+    line-height: 31.47px;
+    margin: 47px 0px 7px 0px;
+}
+
+.top {
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+}
+
+
+
+.email, .password {
+    display: flex;
+    margin: 17px 0px 0px 0px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.sign-up {
+}
+.input-email {
+}
+.user-icon, .lock-icon  {
+    background-color: #E65848;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon img {
+    height: 28px;
+}
+
+.input-password {
+}
+.lock-icon img {
+    height: 29px;
+}
+
+#inp-password, #inp-email {
+    background-color: #fff;
+    padding: 0px 0px 0px 20px;
+    height: 45px;
+    width: 245px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.bottom {
+    margin: 32px 0px 0px 0px;
+    display: flex;
+}
+
+.button {
+    background-color: #E65848;
+    width: 138px;
+    height: 45px;
+}
+.forgot-pass {
+}
